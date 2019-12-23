@@ -1,0 +1,15 @@
+{
+  "common": {},
+  "dev": {
+    "api": "https://xxx.com"
+  },
+  "sit": {
+    "api": "https://xxx.com"
+  },
+  "pre": {
+    "api": "https://xxx.com"
+  },
+  "production": {
+    "api": "https://xxx.com"
+  }
+}

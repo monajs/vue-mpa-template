@@ -1,0 +1,15 @@
+{
+  "common": {},
+  "dev": {
+    "basename": ""
+  },
+  "sit": {
+    "basename": ""
+  },
+  "pre": {
+    "basename": ""
+  },
+  "production": {
+    "basename": ""
+  }
+}

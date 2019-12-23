@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset='UTF-8' />
+  <title>vue-mpa-template</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,viewport-fit=cover'>
+  <!-- built files will be auto injected -->
+</head>
+<body>
+<div id='appWrapper'></div>
+
+<script>
+window.ENV = '<%=htmlWebpackPlugin.options.env %>'
+</script>
+
+<% if(htmlWebpackPlugin.options.env !== 'production'){ %>
+<script src='//static.meituncdn.com/widget/vconsole/3.3.2/index.js'></script>
+<script>
+new window.VConsole()
+</script>
+<% } %>
+
+<% if(htmlWebpackPlugin.options.env === 'dev'){ %>
+<script src='//static.meituncdn.com/widget/??/vue/2.6.10/dev.js,/vue-router/3.1.2/dev.js,/axios/0.19.0/index.js,/index/1.0.7/index.js' crossorigin='anonymous'></script>
+<% } else { %>
+<script src='//static.meituncdn.com/widget/??/vue/2.6.10/index.js,/vue-router/3.1.2/index.js,/axios/0.19.0/index.js,/index/1.0.7/index.js' crossorigin='anonymous'></script>
+<% } %>
+<!-- built files will be auto injected -->
+</body>
+</html>
